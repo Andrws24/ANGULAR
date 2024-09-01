@@ -1,0 +1,16 @@
+<div class="col">
+  <div class="card task-card {{!isDone ? 'not-completed' : 'completed'}}">
+    <div class="card-body">
+      <h5 class="card-title">{{title}}</h5>
+      <p class="card-text">{{description}}</p>
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-danger btn-sm" (click)="doDelete()">Eliminar</button>
+        <button class="btn btn-warning btn-sm" (click)="update()">Actualizar</button>
+        <button class="btn btn-secondary btn-sm" (click)="toggleDone()">
+          {{!isDone ? 'Marcar como hecho ✔️' : 'Marcar como no terminado ❌'}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+

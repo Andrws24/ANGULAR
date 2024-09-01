@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'REPASO-ANGULAR' title`, () => {
+  it(`should have the 'repaso_web' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('REPASO-ANGULAR');
+    expect(app.title).toEqual('repaso_web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, REPASO-ANGULAR');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, repaso_web');
   });
 });
